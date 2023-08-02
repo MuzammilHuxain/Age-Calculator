@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Fraunces:wght@100&family=Outfit:wght@100&family=Poppins:wght@500;700&family=Prompt:wght@100&family=Space+Grotesk&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+:root {
+
+    /* ### Primary */
+
+    --purple: hsl(259, 100%, 65%);
+    --light-red: hsl(0, 100%, 67%);
+
+    /* ### Neutral */
+
+    --white: hsl(0, 0%, 100%);
+    --off-white: hsl(0, 0%, 94%);
+    --light-grey: hsl(0, 0%, 86%);
+    --smokey-grey: hsl(0, 1%, 44%);
+    --off-black: hsl(0, 0%, 8%);
+}
+
+
+
+html {
+    height: 100%;
+}
+
+body {
+
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    font-style: italic;
+}
+
+
+
+span {
+    color: var(--purple);
+}
+
+button {
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+label {
+    display: block;
+    margin: .2rem 1rem;
+    letter-spacing: 3px;
+    opacity: 0.8;
+}
+
+input {
+    width: 150px;
+    margin: 0rem 1rem;
+    padding: .5rem;
+    font-size: 32px;
+
+    outline: none;
+}
+
+.cointainer {
+ 
+    width: 60%;
+    min-height: 100vh;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 3px 3px 13px 1px rgba(0, 0, 0, 0.75);
+    border-bottom-right-radius: 100px;
+}
+
+form {
+    display: flex;
+
+}
+
+.error {
+    margin: .5rem 1rem;
+    color: red;
+    visibility: hidden;
+}
+
+
+
+button {
+    width: 100px;
+    height: 100px;
+    margin-right: 2rem;
+    margin-left: auto;
+    border-radius: 50%;
+    background-color: var(--purple);
+}
+
+button:hover{
+    background-color: var(--off-black);
+}
+
+.age-display-container {
+
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 2rem;
+}
+
+.age-display-container div {
+    margin-bottom: .5rem;
+
+}
+
+
+
+footer {
+    margin-top: auto;
+    background-color: var(--purple);
+    padding: 1rem;
+}
+
+.attribution {
+    font-size: 20px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+}
+
+hr {
+    margin-top: -50px;
+    overflow: hidden;
+    z-index: -1;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    
+    .cointainer {
+
+        width: 100vw;
+        padding: .5rem;
+     
+
+    }
+    
+}
+
+
+
+@media screen and (max-width: 425px) {
+    .cointainer {
+
+        width: 100vw;
+        padding: .5rem;
+
+    }
+
+    input{
+        width: 100px;
+       
+    }
+
+    #btn {
+        margin: 2rem auto;
+    }
+
+    hr{
+        margin-top: -77px;
+    }
+
+
+
+    .age-display-container {
+
+        margin-top: 5rem;
+        padding-left: 0rem;
+
+    }
+
+    .error {
+        margin: .5rem .2rem;
+        font-size: 11px;
+    }
+    
+
+}
+
+@media screen and (max-width: 375px) {
+
+
+    .cointainer {
+
+        width: 100vw;
+        padding: .5rem;
+        
+
+    }
+
+    input {
+        width: 100px;
+        padding: 0rem;
+        margin-left: .2rem;
+    }
+
+    label {
+        margin: .2rem;
+    }
+
+    #btn {
+        margin: 2rem auto;
+    }
+
+    hr {
+        margin-top: -77px;
+
+    }
+
+    .age-display-container {
+
+        margin-top: 5rem;
+        padding-left: 0rem;
+
+    }
+
+
+    .error {
+        margin: .5rem .2rem;
+        font-size: 11px;
+    }
+
+}
+
+
+
+@media screen and (max-width: 320px) {
+
+
+    .cointainer {
+
+        width: 100vw;
+        padding: .5rem;
+
+    }
+
+    input {
+        width: 80px;
+        padding: 0rem;
+        margin-left: .2rem;
+        margin-top: .5rem;
+
+    }
+
+    label {
+        margin: .2rem;
+    }
+
+    #btn {
+        margin: 2rem auto;
+    }
+
+    hr {
+        margin-top: -77px;
+
+    }
+
+    .age-display-container {
+
+        margin-top: 5rem;
+
+    }
+
+
+    .error {
+        margin: .5rem .2rem;
+        font-size: 11px;
+    }
+
+}
+
+
